@@ -38,6 +38,5 @@ export class DragAndDropManagerDirective implements OnInit, OnDestroy {
   ]
 })
 export class DragAndDropManagerRootDirective extends DragAndDropManagerDirective {
-
 }
 

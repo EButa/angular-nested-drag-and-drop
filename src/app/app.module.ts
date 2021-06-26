@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CDK_DRAG_CONFIG, DragDropConfig, DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item.component';
@@ -18,8 +18,6 @@ import { DragAndDropManagerDirective, DragAndDropManagerRootDirective } from 'sr
     BrowserModule,
     MatCardModule,
     DragDropModule
-  ],
-  providers: [
   ],
   bootstrap: [AppComponent]
 })

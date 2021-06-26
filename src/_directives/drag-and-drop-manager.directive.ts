@@ -26,6 +26,7 @@ export class DragAndDropManagerDirective implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.manager.unsubscribe()
+    this.managerService.unregister(this.dropList.id)
   }
 }
 

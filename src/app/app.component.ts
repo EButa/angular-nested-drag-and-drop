@@ -22,8 +22,6 @@ export class AppComponent implements OnInit {
 
   public invert: boolean = true;
 
-  public onDragDrop$ = new Subject<CdkDragDrop<Array<Item>>>()
-
   constructor() {
 
   }
@@ -66,6 +64,8 @@ export class AppComponent implements OnInit {
 
     this.onDragDrop$.subscribe(this.onDragDrop)
   }
+
+  public onDragDrop$ = new Subject<CdkDragDrop<Array<Item>>>()
 
   private onDragDrop = (event: CdkDragDrop<Array<Item>>) => {
     if (event.container === event.previousContainer) {
